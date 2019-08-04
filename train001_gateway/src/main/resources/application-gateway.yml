@@ -1,0 +1,16 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: TRAIN001_SERVER #id\u662F\u552F\u4E00\u7684
+          uri: lb://TRAIN001_SERVER #\u88AB\u4EE3\u7406\u7684\u670D\u52A1\u7684uri
+#          uri: http://localhost:10001
+          predicates:
+            - Path=/server/train001Server/**
+          filters:
+            - StripPrefix=2
+#            - name: RequestRateLimiter
+#              args:
+#                    key-resolver: "#{@getMyKeyResolver}"
+#                    redis-rate-limiter.replenishRate: 1
+#                    redis-rate-limiter.burstCapacity: 3

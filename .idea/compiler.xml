@@ -7,7 +7,21 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="train001_common" />
+        <module name="train001_configure" />
+        <module name="train001_gateway" />
+        <module name="train001_pojo" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="train001_pojo" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="train001_common" options="-parameters" />
+      <module name="train001_configure" options="-parameters" />
+      <module name="train001_gateway" options="-parameters" />
+      <module name="train001_pojo" options="-parameters" />
+    </option>
   </component>
 </project>
