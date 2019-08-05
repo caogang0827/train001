@@ -1,6 +1,8 @@
-package com.caogang.common;
+package com.caogang;
 
 import lombok.Data;
+
+import java.io.Serializable;
 
 
 /**
@@ -9,7 +11,7 @@ import lombok.Data;
  * 描述：返回结果映射
  */
 @Data
-public class ResponseResult {
+public class ResponseResult implements Serializable {
 
     //返回信息编码  0失败 1成功
     private int code;

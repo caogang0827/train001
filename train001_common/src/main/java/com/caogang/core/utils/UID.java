@@ -5,6 +5,11 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.UUID;
 
+/**
+ * 作者：LCG
+ * 创建时间：2019/1/23 17:03
+ * 描述：
+ */
 public class UID {
 	private static Date date = new Date();
 	private static StringBuilder buf = new StringBuilder();

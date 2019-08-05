@@ -5,8 +5,8 @@
     <file url="file://$PROJECT_DIR$/train001_common" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/train001_configure" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/train001_gateway" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/train001_pojo" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/train001_pojo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/train001_model" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/train001_sso" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

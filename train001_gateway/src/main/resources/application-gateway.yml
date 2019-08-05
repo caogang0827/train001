@@ -9,6 +9,15 @@ spring:
             - Path=/server/train001Server/**
           filters:
             - StripPrefix=2
+        - id: TRAIN001_SSO #id\u662F\u552F\u4E00\u7684
+#          uri: lb://TRAIN001_SERVER #\u88AB\u4EE3\u7406\u7684\u670D\u52A1\u7684uri
+          uri: http://localhost:10000
+          predicates:
+            - Path=/sso/train001Sso/**
+#            请求必须携带以'authcode'命名的cookie
+            - Cookie=authcode, (.*)
+          filters:
+            - StripPrefix=2
 #            - name: RequestRateLimiter
 #              args:
 #                    key-resolver: "#{@getMyKeyResolver}"
